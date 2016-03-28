@@ -1,11 +1,16 @@
 import Ember from 'ember';
 
+
+
+
+
 export default Ember.Route.extend({
 
-  addNewPost: false,
+
   model() { // this is referred to as a model hook
     return this.store.findAll('post');
   },
+
 
   actions: {
     delete(post){
